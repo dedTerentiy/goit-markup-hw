@@ -1,0 +1,134 @@
+.logo {
+    margin-left: 215px;
+    margin-top: 25px;
+    position: absolute;
+    width: 145px;
+    height: 35px;
+}
+
+.studia {
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    margin-left: 455px;
+    margin-top: 25px;
+
+}
+
+.portfolio {
+    position: absolute;
+    width: 75px;
+    height: 15px;
+    margin-left: 550px;
+    margin-top: 6px;
+}
+
+.contacts {
+    position: absolute;
+    width: 70px;
+    height: 15px;
+    margin-left: 680px;
+    margin-top: -13px;
+}
+
+
+
+.mail.head {
+    position: absolute;
+    width: 135px;
+    height: 15px;
+    margin-left: 1080px;
+    margin-top: -47px;
+}
+
+.tel.head {
+    width: 120px;
+    height: 15px;
+    margin-left: 1265px;
+    margin-top: -25px;
+}
+
+.face {
+    position: absolute;
+    width: 695px;
+    height: 120px;
+    margin-left: 450px;
+    margin-top: 280px;
+}
+
+.button {
+    position: absolute;
+    width: 135px;
+    line-height: 30px;
+    margin-left: 730px;
+    margin-top: 440px;
+
+}
+
+.peculiarities {
+
+}
+
+.details {
+    position: absolute;
+    width: 270px;
+    line-height: 100px;
+    margin-left: 215px;
+    margin-top: 775px;
+}
+
+.punctuality {
+    position: absolute;
+    width: 270px;
+    line-height: 100px;
+    margin-left: 515px;
+    margin-top: 775px;
+}
+
+.planning {
+    position: absolute;
+    width: 270px;
+    line-height: 100px;
+    margin-left: 815px;
+    margin-top: 774px;
+}
+
+.modernity{
+    position: absolute;
+    width: 270px;
+    line-height: 100px;
+    margin-left: 1115px;
+    margin-top: 775px;
+}
+
+.our.projects {
+    position: absolute;
+    width: 375px;
+    line-height: 40px;
+    margin-left: 610px;
+    margin-top: 970px;
+}
+
+.desktop {
+    position: absolute;
+    width: 370px;
+    line-height: 295px;
+    margin-left: 215px;
+    margin-top: 1060px;
+}
+
+.phone {
+    position: absolute;
+    width: 370px;
+    line-height: 295px;
+    margin-left: 615px;
+    margin-top: 1060px;
+}
+
+.colors {
+    position: absolute;
+    width: 370px;
+    line-height: 295px;
+    margin-left: 1015px;
+    margin-top: 1060px;
+}
