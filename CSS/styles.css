@@ -1,134 +1,93 @@
+@import url('https://fonts.googleapis.com/css2? family= Raleway:wght@700 & family= Roboto:wght@400;500;700;900 & display=swap');
+
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+.head {
+    font-family: 'Roboto', sans-serif;
+}
+
 .logo {
-    margin-left: 215px;
-    margin-top: 25px;
-    position: absolute;
-    width: 145px;
-    height: 35px;
+    font-family: 'Raleway', sans-serif;
+    color: #2196F3;
 }
 
-.studia {
-    position: absolute;
-    width: 50px;
-    height: 15px;
-    margin-left: 455px;
-    margin-top: 25px;
-
+.pages {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
 }
 
-.portfolio {
-    position: absolute;
-    width: 75px;
-    height: 15px;
-    margin-left: 550px;
-    margin-top: 6px;
+.pages:hover {
+    color: #2196F3;
 }
 
-.contacts {
-    position: absolute;
-    width: 70px;
-    height: 15px;
-    margin-left: 680px;
-    margin-top: -13px;
+.pages:active {
+    color: #2196F3;
 }
 
-
-
-.mail.head {
-    position: absolute;
-    width: 135px;
-    height: 15px;
-    margin-left: 1080px;
-    margin-top: -47px;
+.info {
+    color: #757575;
 }
 
-.tel.head {
-    width: 120px;
-    height: 15px;
-    margin-left: 1265px;
-    margin-top: -25px;
+.info:hover {
+    color: #2196F3;
+}
+
+a {
+    text-decoration: none;
 }
 
 .face {
-    position: absolute;
-    width: 695px;
-    height: 120px;
-    margin-left: 450px;
-    margin-top: 280px;
+    background-color: #2F303A;
+    color: #fff;
 }
 
 .button {
-    position: absolute;
-    width: 135px;
-    line-height: 30px;
-    margin-left: 730px;
-    margin-top: 440px;
-
+    background-color: #2196F3;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
-.peculiarities {
-
+.button:hover {
+    background-color: #188CE8;
 }
 
-.details {
-    position: absolute;
-    width: 270px;
-    line-height: 100px;
-    margin-left: 215px;
-    margin-top: 775px;
+.our-team {
+    font-family: 'Roboto', sans-serif;
 }
 
-.punctuality {
-    position: absolute;
-    width: 270px;
-    line-height: 100px;
-    margin-left: 515px;
-    margin-top: 775px;
+.position {
+    color: #757575;
 }
 
-.planning {
-    position: absolute;
-    width: 270px;
-    line-height: 100px;
-    margin-left: 815px;
-    margin-top: 774px;
+.deteils-text {
+    color: #757575;
 }
 
-.modernity{
-    position: absolute;
-    width: 270px;
-    line-height: 100px;
-    margin-left: 1115px;
-    margin-top: 775px;
+.footer {
+    background-color: #2F303A;
 }
 
-.our.projects {
-    position: absolute;
-    width: 375px;
-    line-height: 40px;
-    margin-left: 610px;
-    margin-top: 970px;
+.map {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
 }
 
-.desktop {
-    position: absolute;
-    width: 370px;
-    line-height: 295px;
-    margin-left: 215px;
-    margin-top: 1060px;
+.contacts {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.phone {
-    position: absolute;
-    width: 370px;
-    line-height: 295px;
-    margin-left: 615px;
-    margin-top: 1060px;
+/* portfolio.css */
+
+.portfolio {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    border: 1px solid transparent;
 }
 
-.colors {
-    position: absolute;
-    width: 370px;
-    line-height: 295px;
-    margin-left: 1015px;
-    margin-top: 1060px;
+.portfolio:hover {
+    background-color: #2196F3;
+    color: #fff;
 }
