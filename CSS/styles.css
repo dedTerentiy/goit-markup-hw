@@ -28,7 +28,8 @@
     font-family: var(--font-family-roboto);
 }
 
-.logo {
+
+.logo-word1 {
     font-family: var(--font-family-relaway);
     color: #2196F3;
     font-size: 26px;
@@ -38,11 +39,21 @@
 }
 
 .logo-word2 {
-    color: var(--color-text-dark)
+    font-family: var(--font-family-relaway);
+    color: var(--color-text-dark);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
 }
 
 .logo-word3 {
+    font-family: var(--font-family-relaway);
     color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
 }
 
 .pages {
@@ -153,9 +164,9 @@ li {
 
 .peculiarities-text {
     color: var(--color-text-grey);
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.7;
-
+    letter-spacing: 0.03em;
 }
 
 .our-projects {
@@ -181,7 +192,7 @@ li {
 
 .position {
     color: var(--color-text-grey);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.1;
 }
 
@@ -191,16 +202,28 @@ li {
 
 .address {
     font-style: normal;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.7;
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 .map {
     color: #FFFFFF;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 .contacts {
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 /* portfolio.css */
