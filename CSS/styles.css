@@ -10,6 +10,53 @@
     src: url(../fonts/Roboto-Black.ttf) format('truetype');
 }
 
+/* normalize */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+    display: inline-block;
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+address {
+    font-style: normal;
+}
+
 
 :root {
     --font-family-relaway: 'Raleway', sans-serif;
@@ -17,17 +64,34 @@
     --color-text-dark: #212121;
     --color-text-grey: #757575;
     --background-color-grey: #2F303A;
+    --color-text-blue: #2196F3;
+}
+
+html {
+    box-sizing: border-box;
 }
 
 .body {
     font-family: var(--font-family-roboto);
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;   
 }
 
-.head {
+
+
+.header-inner {
     font-family: var(--font-family-roboto);
+    display: inline-block;
+    border-bottom: 1px;
+    border-bottom: 1px solid #ECECEC;
+    padding: 30px 0px;
 }
 
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    /* text-align: center; */
+}
 
 .logo-word1 {
     font-family: var(--font-family-relaway);
@@ -36,6 +100,7 @@
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: 0.03em;
+    margin-top: 24px;
 }
 
 .logo-word2 {
@@ -45,6 +110,8 @@
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: 0.03em;
+    margin-top: 24px;
+    margin-right: 93px;
 }
 
 .logo-word3 {
@@ -56,15 +123,20 @@
     letter-spacing: 0.03em;
 }
 
+.pages-body {
+    display: inline-block;
+}
+
 .pages {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
     color: var(--color-text-dark);
     letter-spacing: 0.02em;
-    width: 68px;
+    min-width: 49px;
     height: 16px;
-    
+    margin-right: 50px;
+    display: inline-block;
 }
 
 .pages:hover {
@@ -94,36 +166,38 @@
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    margin-right: 50px;
 }
 
 .info:hover {
-    color: var(--color-text-grey);
+    color: var(--color-text-blue);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
 }
 
-a {
-    text-decoration: none;
-}
 
-li {
-    list-style-type: none;
-}
+
 
 .face {
     background-color: var(--background-color-grey);
+    display: inline-block;
+    min-width: 1600px;
+    text-align: center;
+
 }
 
-.title {
+.title-text {
     font-family: var(--font-family-roboto);
     background-color: var(--background-color-grey);
     color: #fff;
     font-weight: 900;
     font-size: 45px;
     line-height: 1.4;
-    text-align: center;
     letter-spacing: 0.06em;
+    margin: 200px auto 30px;
+    width: 696px;
+    height: 120;
 }
 
 .button {
@@ -136,6 +210,8 @@ li {
     border-radius: 4px;
     cursor: pointer;
     letter-spacing: 0.06em;
+    padding: 10px 32px;
+    margin-bottom: 200px;
 }
 
 .button :hover {
@@ -151,8 +227,10 @@ li {
     border-radius: 4px;
     cursor: pointer;
 }
+
+
 .hide {
-    font-size: 0;
+    visibility: hidden;
 }
 
 .peculiarities-title {
@@ -160,6 +238,7 @@ li {
     font-size: 14px;
     line-height: 1.17;
     color: var(--color-text-dark);
+    display: inline-block;
 }
 
 .peculiarities-text {
@@ -167,6 +246,7 @@ li {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    display: inline-block;
 }
 
 .our-projects {
@@ -237,6 +317,8 @@ li {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    margin-right: 8px;
+    margin-bottom: 50px;
 }
 
 .portfolio-button:hover {
@@ -250,6 +332,9 @@ li {
     background-color: #2196F3;
     color: #fff;
     border: 1px solid transparent;
+}
+
+.projects {
 }
 
 .project-name {
