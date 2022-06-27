@@ -51,7 +51,7 @@ h4,
 h5,
 h6,
 p {
-    margin-top: 0;
+    margin: 0;
 }
 address {
     font-style: normal;
@@ -76,21 +76,37 @@ html {
     letter-spacing: 0.03em;   
 }
 
-
+.container {
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .header-inner {
     font-family: var(--font-family-roboto);
     display: inline-block;
     border-bottom: 1px;
     border-bottom: 1px solid #ECECEC;
-    padding: 30px 0px;
+    padding: 24px 0px;
+    align-items: center;
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0px auto;
     /* text-align: center; */
+    display: flex;
+}
+
+.logo {
+    margin-top: 24px;
+    margin-right: 93px;
 }
 
 .logo-word1 {
@@ -100,7 +116,7 @@ html {
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: 0.03em;
-    margin-top: 24px;
+    
 }
 
 .logo-word2 {
@@ -109,9 +125,7 @@ html {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.15;
-    letter-spacing: 0.03em;
-    margin-top: 24px;
-    margin-right: 93px;
+    letter-spacing: 0.03em;;
 }
 
 .logo-word3 {
@@ -160,6 +174,12 @@ html {
     line-height: 1.17;
 }
 
+.info-body {
+    /* display: flex; */
+    /* margin-left: 331px; */
+    
+}
+
 .info {
     color: var(--color-text-grey);
     font-weight: 500;
@@ -167,6 +187,7 @@ html {
     line-height: 1.17;
     letter-spacing: 0.02em;
     margin-right: 50px;
+    
 }
 
 .info:hover {
@@ -176,15 +197,10 @@ html {
     line-height: 1.17;
 }
 
-
-
-
 .face {
     background-color: var(--background-color-grey);
     display: inline-block;
-    min-width: 1600px;
     text-align: center;
-
 }
 
 .title-text {
@@ -195,9 +211,10 @@ html {
     font-size: 45px;
     line-height: 1.4;
     letter-spacing: 0.06em;
-    margin: 200px auto 30px;
     width: 696px;
     height: 120;
+    padding-top: 200px;
+    padding-bottom: 280;
 }
 
 .button {
@@ -220,6 +237,7 @@ html {
     border-radius: 4px;
     cursor: pointer;
 }
+
 .button :focus {
     background-color: #2196F3;
     color: #fff;
@@ -228,9 +246,23 @@ html {
     cursor: pointer;
 }
 
-
 .hide {
     visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+.box-peculiarities {
+    width: 270px;
+    height: 101px;
+}
+
+.peculiarities-boxes :not(:last-child) {
+    margin-right: 30px;
+}
+
+.peculiarities-boxes {
+    /* margin: 0px auto; */
 }
 
 .peculiarities-title {
@@ -254,6 +286,27 @@ html {
     font-size: 36px;
     line-height: 1.17;
     color: var(--color-text-dark);
+}
+
+.services {
+    margin-right: 30px;
+}
+
+.services:last-child {
+    margin-right: 0;
+}
+
+.our-team-container {
+    background-color: #F5F4FA;
+    margin-top: 94px;
+}
+
+.employee {
+    margin-right: 30px;
+}
+
+.employee:last-child {
+    margin: 0px;
 }
 
 .our-team {
@@ -308,8 +361,14 @@ html {
 
 /* portfolio.css */
 
+.projects-button {
+    display: flex;
+    align-content: center;
+}
+
 .portfolio-button {
     font-family: var(--font-family-roboto);
+    color: var(--color-text-dark);
     background-color: #F5F4FA;
     border-radius: 4px;
     border: 1px solid transparent;
@@ -319,6 +378,7 @@ html {
     line-height: 1.6;
     margin-right: 8px;
     margin-bottom: 50px;
+    margin-top: 63px;
 }
 
 .portfolio-button:hover {
@@ -334,7 +394,13 @@ html {
     border: 1px solid transparent;
 }
 
-.projects {
+.portfolio-boxes {
+
+}
+
+.portfolio-projects {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-name {
@@ -342,10 +408,48 @@ html {
     font-size: 18px;
     line-height: 2;
     color: var(--color-text-dark);
+    margin-bottom: 4px;
 }
 
 .project-text {
     font-size: 16px;
     line-height: 2;
     color: var(--color-text-grey);
+    margin-bottom: 20px;
+}
+
+.box {
+    border: 1px solid #EEEEEE;
+    /* padding-right: 30px; */
+    /* padding-bottom: 30px; */
+    margin-right: 30px;
+    /* margin: 15px; */
+    /* width: 370px; */
+    flex-wrap: wrap;
+    /* height: 404px; */
+    /* display: flex; */
+}
+
+.box1 {
+    /* margin-right: 30px; */
+}
+
+.box1 :last-child {
+    margin-right: 0;
+}
+
+.box2 {
+    /* margin-right: 30px; */
+}
+
+.box2 :last-child {
+    margin-right: 0;
+}
+
+.box3 {
+    /* margin-right: 30px; */
+}
+
+.box3 :last-child {
+    margin-right: 0;
 }
