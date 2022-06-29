@@ -77,10 +77,10 @@ html {
 }
 
 .container {
-    display: flex;
+    /* display: flex; */
     max-width: 1200px;
-    justify-content: center;
     flex-wrap: wrap;
+    margin: 0px auto;
 }
 
 .header-inner {
@@ -92,20 +92,9 @@ html {
     align-items: center;
     min-width: 1200px;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-
-
-.container {
-    /* max-width: 1200px; */
-    margin: 0px auto;
-    /* text-align: center; */
-    display: flex;
 }
 
 .logo {
-    margin-top: 24px;
     margin-right: 93px;
 }
 
@@ -176,7 +165,7 @@ html {
 
 .info-body {
     /* display: flex; */
-    /* margin-left: 331px; */
+    margin-left: auto;
     
 }
 
@@ -199,8 +188,14 @@ html {
 
 .face {
     background-color: var(--background-color-grey);
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title-text {
@@ -212,9 +207,11 @@ html {
     line-height: 1.4;
     letter-spacing: 0.06em;
     width: 696px;
-    height: 120;
-    padding-top: 200px;
-    padding-bottom: 280;
+    height: 120px;
+    /* padding-top: 200px; */
+    padding-bottom: 280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button {
@@ -255,6 +252,8 @@ html {
 .box-peculiarities {
     width: 270px;
     height: 101px;
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
 
 .peculiarities-boxes :not(:last-child) {
@@ -286,6 +285,8 @@ html {
     font-size: 36px;
     line-height: 1.17;
     color: var(--color-text-dark);
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .services {
@@ -299,6 +300,7 @@ html {
 .our-team-container {
     background-color: #F5F4FA;
     margin-top: 94px;
+    margin-bottom: 94px;
 }
 
 .employee {
@@ -314,6 +316,8 @@ html {
     font-size: 36px;
     line-height: 1.17;
     color: var(--color-text-dark);
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .name {
@@ -329,8 +333,15 @@ html {
     line-height: 1.1;
 }
 
+.container .footer {
+    display: inline;
+}
+
 .footer {
     background-color: var(--background-color-grey);
+    align-items: center;
+    /* display: block; */
+    /* display: flex; */
 }
 
 .address {
@@ -339,6 +350,7 @@ html {
     line-height: 1.7;
     font-weight: 400;
     letter-spacing: 0.03em;
+    /* display: flex; */
 }
 
 .map {
@@ -362,8 +374,11 @@ html {
 /* portfolio.css */
 
 .projects-button {
-    display: flex;
+    /* display: flex; */
     align-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .portfolio-button {
@@ -420,36 +435,11 @@ html {
 
 .box {
     border: 1px solid #EEEEEE;
-    /* padding-right: 30px; */
-    /* padding-bottom: 30px; */
     margin-right: 30px;
-    /* margin: 15px; */
-    /* width: 370px; */
     flex-wrap: wrap;
-    /* height: 404px; */
-    /* display: flex; */
+    margin-left: auto;
 }
 
-.box1 {
-    /* margin-right: 30px; */
-}
-
-.box1 :last-child {
-    margin-right: 0;
-}
-
-.box2 {
-    /* margin-right: 30px; */
-}
-
-.box2 :last-child {
-    margin-right: 0;
-}
-
-.box3 {
-    /* margin-right: 30px; */
-}
-
-.box3 :last-child {
+.box:nth-child(3n) {
     margin-right: 0;
 }
