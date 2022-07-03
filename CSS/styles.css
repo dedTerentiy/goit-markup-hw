@@ -87,7 +87,7 @@ html {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0px auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -247,6 +247,11 @@ html {
     cursor: pointer;
 }
 
+section:nth-child(2) {
+    padding-bottom: 0;
+}
+
+
 .hide {
     visibility: hidden;
     width: 0px;
@@ -256,8 +261,6 @@ html {
 .box-peculiarities {
     width: 270px;
     height: 101px;
-    /*  */
-    /* */
 }
 
 .peculiarities-boxes :not(:last-child) {
@@ -287,7 +290,7 @@ html {
     line-height: 1.17;
     color: var(--color-text-dark);
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -320,12 +323,17 @@ html {
     margin-bottom: 50px;
 }
 
+.text-employee-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .name {
     color: var(--color-text-dark);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
-    padding-top: 30px;
+    
     text-align: center;
 }
 
@@ -334,7 +342,7 @@ html {
     font-size: 16px;
     line-height: 1.1;
     padding-top: 10px;
-    padding-bottom: 30px;
+    
     text-align: center;
 }
 
@@ -367,6 +375,7 @@ html {
     line-height: 1.7;
     font-weight: 400;
     letter-spacing: 0.03em;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -378,6 +387,7 @@ html {
     line-height: 1.7;
     font-weight: 400;
     letter-spacing: 0.03em;
+    margin-top: 9px;
     display: flex;
     flex-direction: column;
 }
@@ -385,7 +395,7 @@ html {
 /* portfolio.css */
 
 .projects-button-list {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     display: flex;
 
 }
@@ -395,7 +405,6 @@ html {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    /* margin-bottom: 50px; */
     justify-content: space-around;
 }
 
@@ -434,8 +443,8 @@ html {
 }
 
 .project-text-box {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .project-name {
@@ -443,21 +452,15 @@ html {
     font-size: 18px;
     line-height: 2;
     color: var(--color-text-dark);
-    padding-left: 24px;
-    
 }
 
 .project-text {
     font-size: 16px;
     line-height: 2;
     color: var(--color-text-grey);
-    
-    padding-left: 24px;
-    padding-top: 4px;
 }
 
 .box {
-    border: 1px solid #EEEEEE;
     margin-right: 30px;
     flex-wrap: wrap;
     margin-left: auto;
@@ -465,7 +468,6 @@ html {
 }
 
 .last-box {
-    border: 1px solid #EEEEEE;
     margin-right: 30px;
     flex-wrap: wrap;
     margin-left: auto;
