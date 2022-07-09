@@ -75,6 +75,8 @@ address {
     --color-text-grey: #757575;
     --background-color-grey: #2F303A;
     --color-text-blue: #2196F3;
+
+    --icon-text-grey: #AFB1B8;
 }
 
 html {
@@ -193,8 +195,15 @@ html {
     line-height: 1.17;
 }
 
+.info:focus {
+    color: var(--color-text-blue);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+}
+
 .face {
-    background-color: var(--background-color-grey);
+    background-color: var(--background-color-grey) 50%;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -202,11 +211,11 @@ html {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url(../images/backgrond-photo1.jpg);
 }
 
 .title-text {
     font-family: var(--font-family-roboto);
-    background-color: var(--background-color-grey);
     color: #fff;
     font-weight: 900;
     font-size: 45px;
@@ -251,9 +260,8 @@ section:nth-child(2) {
     padding-bottom: 0;
 }
 
-
 .hide {
-    visibility: hidden;
+    display: none;
     width: 0px;
     height: 0px;
 }
@@ -308,6 +316,30 @@ section:nth-child(2) {
 
 .employee {
     margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: #fff;
+}
+
+.inst-source {
+    color: var(--icon-text-grey);
+}
+
+.instagram-icon-1 {
+    fill: currentColor;
+}
+
+.instagram-icon-1:hover {
+    background-color: var(--color-text-blue);
+    border: 1px solid 50%;
+    fill: #fff;
+}
+
+.twitter-icon-1 {
+    width: 40px;
+    height: 40px;
+    fill: var(--icon-text-grey);
 }
 
 .employee:last-child {
@@ -324,8 +356,8 @@ section:nth-child(2) {
 }
 
 .text-employee-container {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .name {
@@ -345,6 +377,7 @@ section:nth-child(2) {
     
     text-align: center;
 }
+
 
 .footer {
     background-color: var(--background-color-grey);
@@ -445,6 +478,7 @@ section:nth-child(2) {
 .project-text-box {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    margin-top: -4px;
 }
 
 .project-name {
