@@ -462,6 +462,12 @@ section:nth-child(2) {
     fill: #fff;
 }  
 
+.inst-source:focus {
+    background-color: var(--color-text-blue);
+    color: #fff;
+    fill: #fff;
+}
+
 .instagram-icon-1 {
     fill: currentColor;
     width: 20px;
@@ -486,6 +492,12 @@ section:nth-child(2) {
 }
 
 .twitter-source:hover {
+    background-color: var(--color-text-blue);
+    fill: #fff;
+    color: #fff;
+}
+
+.twitter-source:focus {
     background-color: var(--color-text-blue);
     fill: #fff;
     color: #fff;
@@ -520,6 +532,12 @@ section:nth-child(2) {
     color: #fff;
 }
 
+.facebook-source:focus {
+    background-color: var(--color-text-blue);
+    fill: #fff;
+    color: #fff;
+}
+
 .facebook-icon-1 {
     width: 20px;
     height: 20px;
@@ -543,6 +561,12 @@ section:nth-child(2) {
 }
 
 .linkedin-source:hover {
+    background-color: var(--color-text-blue);
+    color: #fff;
+    fill: #fff;
+}
+
+.linkedin-source:focus {
     background-color: var(--color-text-blue);
     color: #fff;
     fill: #fff;
@@ -622,6 +646,11 @@ section:nth-child(2) {
     border: 1px solid #2196F3;
 }
 
+.clients-list :focus {
+    fill: var(--color-text-blue);
+    border: 1px solid #2196F3;
+}
+
 .client-logo-item {
     display: flex;
     justify-content: center;
@@ -639,8 +668,18 @@ section:nth-child(2) {
     cursor: pointer;
 }
 
+.client-logo-item :focus {
+    border: 1px solid #2196F3;
+    cursor: pointer;
+}
+
 .client-logo-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.client-ligo-link :focus {
+    fill: var(--color-text-blue);
+    border: 1px solid #2196F3;
 }
 
 .client-logo-icon {
@@ -722,9 +761,10 @@ section:nth-child(2) {
     fill: #F5F4FA;
     width: 20px;
     height: 20px;
+
 }
 
-.social-link-icon :not(:last-child) {
+.social-link-icon:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -739,6 +779,14 @@ section:nth-child(2) {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.inst-link-icon:hover {
+    background-color: var(--color-text-blue);
+}
+
+.inst-link-icon:focus {
+    background-color: var(--color-text-blue);
+}
+
 .twitt-link-icon {
     display: flex;
     justify-content: center;
@@ -749,6 +797,14 @@ section:nth-child(2) {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+.twitt-link-icon:hover {
+    background-color: var(--color-text-blue);
+} 
+
+.twitt-link-icon:focus {
+    background-color: var(--color-text-blue);
+} 
 
 .facebook-link-icon {
     display: flex;
@@ -761,6 +817,14 @@ section:nth-child(2) {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.facebook-link-icon:hover {
+    background-color: var(--color-text-blue);
+} 
+
+.facebook-link-icon:focus {
+    background-color: var(--color-text-blue);
+} 
+
 .linkedin-link-icon {
     display: flex;
     justify-content: center;
@@ -770,6 +834,14 @@ section:nth-child(2) {
     border: 1px solid transparent;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.linkedin-link-icon:hover {
+    background-color: var(--color-text-blue);
+}
+
+.linkedin-link-icon:focus {
+    background-color: var(--color-text-blue);
 }
 
 .social-link-icon-item {
@@ -782,16 +854,6 @@ section:nth-child(2) {
 .social-link-icon {
     fill: #fff;
 }
-
-.social-link-icon:focus {
-    border-color: var(--color-text-blue);
-}
-
-.social-link-icon-item:hover {
-    background-color: var(--color-text-blue);
-}
-
-
 
 /* portfolio.css */
 
