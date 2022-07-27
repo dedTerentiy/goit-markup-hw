@@ -393,7 +393,6 @@ section:nth-child(2) {
     margin-bottom: 50px;
 }
 
-
 .services {
     margin-right: 30px;
 }
@@ -425,9 +424,6 @@ section:nth-child(2) {
     height: 44px;
     margin-top: 16px;
     margin-bottom: 30px;
-}
-
-.employee-item:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -479,7 +475,6 @@ section:nth-child(2) {
     height: 100%;
     border: 1px solid transparent;
     border-radius: 50%;
-    margin-left: 10px;
 }
 
 .twitter-source:hover {
@@ -514,7 +509,6 @@ section:nth-child(2) {
     height: 100%;
     border: 1px solid transparent;
     border-radius: 50%;
-    margin-left: 10px;
 }
 
 .facebook-source:hover {
