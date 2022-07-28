@@ -628,10 +628,12 @@ section:nth-child(2) {
 
 .clients-list :hover {
     fill: var(--color-text-blue);
+    border: 1px solid var(--color-text-blue);
 }
 
 .clients-list :focus {
     fill: var(--color-text-blue);
+    border: 1px solid var(--color-text-blue);
 }
 
 .client-logo-item {
@@ -642,17 +644,16 @@ section:nth-child(2) {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    fill: var(--icon-text-grey);
+    fill: var(--color-text-grey);
     cursor: pointer;
 }
 
-.client-logo-item:hover {
-    cursor: pointer;
+.client-logo-item :hover {
     fill: var(--color-text-blue);
-    border: 1px solid var(--color-text-blue);
+    border: none;
 }
 
-.client-logo-item:focus {
+.client-logo-item :focus {
     cursor: pointer;
     fill: var(--color-text-blue);
     border: 1px solid var(--color-text-blue);
@@ -662,8 +663,22 @@ section:nth-child(2) {
     margin-right: 30px;
 }
 
-.client-ligo-link:hover {
-    border: 1px solid var(--color-text-blue);
+.client-ligo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+}
+
+.client-ligo-link :hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .client-ligo-link :focus {
