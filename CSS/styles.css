@@ -227,7 +227,7 @@ section :nth-child(5) {
 }
 
 .envelope-icon :hover {
-    fill: var(--color-text-blue);
+    fill: var(--color-text-blue);   
 }
 
 .envelope-icon :focus {
@@ -344,6 +344,7 @@ section:nth-child(2) {
     width: 100%;
     height: 120px;
     display: flex;
+    border-radius: 4px;
 }
 
 .icon-antena {
@@ -622,67 +623,41 @@ section:nth-child(2) {
 
 .logo-list {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.clients-list :hover {
-    fill: var(--color-text-blue);
-    border: 1px solid var(--color-text-blue);
-}
-
-.clients-list :focus {
-    fill: var(--color-text-blue);
-    border: 1px solid var(--color-text-blue);
-}
-
-.client-logo-item {
+.clients-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    fill: var(--color-text-grey);
-    cursor: pointer;
-}
-
-.client-logo-item :hover {
-    fill: var(--color-text-blue);
-    border: none;
-}
-
-.client-logo-item :focus {
-    cursor: pointer;
-    fill: var(--color-text-blue);
-    border: 1px solid var(--color-text-blue);
 }
 
 .client-logo-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.client-ligo-link {
+.client-logo-link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 170px;
     height: 92px;
-}
-
-.client-ligo-link :hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
+    border: 1px solid var(--icon-text-grey);
     border-radius: 4px;
-    cursor: pointer;
+    fill: var(--icon-text-grey);
 }
 
-.client-ligo-link :focus {
+.client-logo-link:hover {
     fill: var(--color-text-blue);
+    border: 1px solid var(--color-text-blue);
+    border-radius: 4px;
+}
+
+.client-logo-link:focus {
+    fill: var(--color-text-blue);
+    border: 1px solid var(--color-text-blue);
+    border-radius: 4px;
 }
 
 .client-logo-icon {
@@ -864,13 +839,16 @@ section:nth-child(2) {
 }
 
 .projects-button {
-    height: 54px;
     align-content: center;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     justify-content: space-around;
     margin-bottom: 50px;
+}
+
+.portfolio-button-item {
+    margin-right: 8px;
 }
 
 .portfolio-button {
@@ -883,7 +861,6 @@ section:nth-child(2) {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    margin-right: 8px;
     padding: 6px 22px;
 }
 
