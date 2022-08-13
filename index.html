@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body class="body">
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-button"data-modal-close>
+                <svg class="close-button-icon">
+                    <use href="./images/svg/symbol-defs.svg#icon-close-button"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     <header>
         <div class="container">       
             <div class="header-inner">              
@@ -45,7 +54,7 @@
     <main>
         <section class="face">
                     <h1 class="title-text">ЕФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                    <button class="button" type="button">Заказать услугу</button>
+                    <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </section>
         <section>
             <h2 class="hide">Особености</h2>
@@ -95,9 +104,9 @@
                 <div class="services-title">
                 <h2 class="our-projects">Чем мы занимаемся</h2>
                 <ul>
-                    <li class="services"><img src="./images/desktop1.jpg" width="370" height="295" alt="Програмирование"></li>
-                    <li class="services"><img src="./images/phone1.jpg"  width="370" height="295" alt="Дизайн"></li>
-                    <li class="services"><img src="./images/colors1.jpg"  width="370" height="295" alt="Цветокоррекция"></li>
+                    <li class="services"><div class="services-text 1">Десктопные приложения</div><img src="./images/desktop1.jpg" width="370" height="295" alt="Програмирование"></li>
+                    <li class="services"><div class="services-text 2">Мобильные приложения</div><img src="./images/phone1.jpg"  width="370" height="295" alt="Дизайн"></li>
+                    <li class="services"><div class="services-text 3">Дизайнерские решения</div><img src="./images/colors1.jpg"  width="370" height="295" alt="Цветокоррекция"></li>
                 </div>
                 </ul>
         </section>
@@ -366,5 +375,6 @@
             </div>
             </div>        
     </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>

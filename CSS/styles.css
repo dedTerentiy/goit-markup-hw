@@ -86,7 +86,7 @@ html {
 
 .body {
     font-family: var(--font-family-roboto);
-    letter-spacing: 0.03em;   
+    letter-spacing: 0.03em;
 }
 
 .container {
@@ -157,6 +157,7 @@ section :nth-child(5) {
     height: 16px;
     padding-right: 50px;
     display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pages:hover {
@@ -194,15 +195,16 @@ section :nth-child(5) {
     padding-right: 50px;   
 }
 
-.info :hover {
+.info:hover {
     color: var(--color-text-blue);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
     fill: var(--color-text-blue);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info :focus {
+.info:focus {
     color: var(--color-text-blue);
     font-weight: 500;
     font-size: 14px;
@@ -210,11 +212,11 @@ section :nth-child(5) {
     fill: var(--color-text-blue)
 }
 
-.info :active {
+.info:active {
     fill: var(--color-text-blue);
 }
 
-.info-link :hover {
+.info-link:hover {
     fill: var(--color-text-blue);
     color: var(--color-text-blue);
 }
@@ -223,18 +225,18 @@ section :nth-child(5) {
     margin-right: 10px;
     fill: currentColor;
     height: 16px;
-    width: 20px;
+    width: 20px;    
 }
 
-.envelope-icon :hover {
+.envelope-icon:hover {
     fill: var(--color-text-blue);   
 }
 
-.envelope-icon :focus {
+.envelope-icon:focus {
     fill: var(--color-text-blue);
 }
 
-.envelope-icon :active {
+.envelope-icon:active {
     fill: var(--color-text-blue);
 }
 
@@ -285,13 +287,18 @@ section :nth-child(5) {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+
     background-color: #2196F3;
     color: #fff;
     border: 1px solid transparent;
+
     border-radius: 4px;
     cursor: pointer;
     letter-spacing: 0.06em;
     padding: 10px 32px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .button :hover {
@@ -396,10 +403,33 @@ section:nth-child(2) {
 
 .services {
     margin-right: 30px;
+    margin-bottom: 0;
+
+    position: relative;
+    
 }
 
 .services:last-child {
     margin-right: 0;
+}
+
+.services-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 370px;
+    height: 70px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 4px;
+
+
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(47, 48, 58, 0.8);
+    
+
 }
 
 .our-team-section {
@@ -426,6 +456,8 @@ section:nth-child(2) {
     margin-top: 16px;
     margin-bottom: 30px;
     margin-right: 10px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .employee-item :hover {
@@ -458,8 +490,10 @@ section:nth-child(2) {
 
 .instagram-icon-1 {
     fill: currentColor;
+
     width: 20px;
     height: 20px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .instagram-icon-1:hover {
@@ -493,7 +527,10 @@ section:nth-child(2) {
 .twitter-icon-1 {
     width: 20px;
     height: 20px;
+
     fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .twitter-icon-1:hover {
@@ -506,10 +543,12 @@ section:nth-child(2) {
     justify-content: center;
     align-items: center;
     color: var(--icon-text-grey);
+    border: 1px solid transparent;
     width: 100%;
     height: 100%;
-    border: 1px solid transparent;
+    
     border-radius: 50%;
+
 }
 
 .facebook-source:hover {
@@ -527,7 +566,9 @@ section:nth-child(2) {
 .facebook-icon-1 {
     width: 20px;
     height: 20px;
+
     fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .facebook-icon-1:hover {
@@ -539,11 +580,14 @@ section:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
+
     color: var(--icon-text-grey);
+    border: 1px solid transparent;
+
     width: 100%;
     height: 100%;
-    border: 1px solid transparent;
     border-radius: 50%;
+
 }
 
 .linkedin-source:hover {
@@ -560,9 +604,11 @@ section:nth-child(2) {
 
 .linkedin-icon-1 {
     fill: currentColor;
+
     width: 20px;
     height: 20px;
-}
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .linkedin-icon-1:hover {
     fill: #fff;
@@ -641,11 +687,15 @@ section:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border-radius: 4px;
     width: 170px;
     height: 92px;
     border: 1px solid var(--icon-text-grey);
-    border-radius: 4px;
+    
     fill: var(--icon-text-grey);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-logo-link:hover {
@@ -754,10 +804,13 @@ section:nth-child(2) {
     border: 1px solid transparent;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .inst-link-icon:hover {
     background-color: var(--color-text-blue);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .inst-link-icon:focus {
@@ -768,11 +821,15 @@ section:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 100%;
     height: 100%;
     border: 1px solid transparent;
     border-radius: 50%;
+
     background-color: rgba(255, 255, 255, 0.1);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .twitt-link-icon:hover {
@@ -787,11 +844,14 @@ section:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 100%;
     height: 100%;
     border: 1px solid transparent;
     border-radius: 50%;
+
     background-color: rgba(255, 255, 255, 0.1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .facebook-link-icon:hover {
@@ -806,11 +866,14 @@ section:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 100%;
     height: 100%;
     border: 1px solid transparent;
     border-radius: 50%;
+
     background-color: rgba(255, 255, 255, 0.1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .linkedin-link-icon:hover {
@@ -826,13 +889,17 @@ section:nth-child(2) {
     height: 44px;
     margin-top: 16px;
     margin-bottom: 30px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .social-link-icon {
     fill: #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-/* portfolio.css */
+----------------/* portfolio.css */-------------------
 
 .projects-button-list {
     display: flex;
@@ -855,6 +922,7 @@ section:nth-child(2) {
     font-family: var(--font-family-roboto);
     color: var(--color-text-dark);
     background-color: #F5F4FA;
+
     border-radius: 4px;
     border: 1px solid transparent;
     letter-spacing: 0.03em;
@@ -862,6 +930,8 @@ section:nth-child(2) {
     font-size: 16px;
     line-height: 1.6;
     padding: 6px 22px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover {
@@ -887,6 +957,7 @@ section:nth-child(2) {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     margin-top: -4px;
+    
 }
 
 .project-name {
@@ -900,31 +971,78 @@ section:nth-child(2) {
     font-size: 16px;
     line-height: 2;
     color: var(--color-text-grey);
+
 }
 
-.box {
-    margin-right: 30px;
+.box {    
     flex-wrap: wrap;
     margin-left: auto;
+
     margin-bottom: 30px;
+    margin-right: 30px;
+    
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-box-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    font-weight: 400;
+    size: 18px;
+    line-height: 28px;
+
+    padding-top: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    color: rgb(255, 255, 255);
+    background: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .box:hover {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+.box:hover .overlay{
+    transform: translateY(0); 
 }
 
 .box:focus {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.project-box-name {
+    width: 100%;
+    height: 100%;
+}
+
 .last-box {
     margin-right: 30px;
+
     flex-wrap: wrap;
     margin-left: auto;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .last-box:hover {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 .last-box:focus {
@@ -937,4 +1055,53 @@ section:nth-child(2) {
 
 .last-box:last-child {
     margin-right: 0;
+}
+
+--------------/* modal-window */------------
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #212121;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.modal {
+    position: fixed;
+    z-index: 2;
+    width: 528px;
+    height: 581px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-button-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
