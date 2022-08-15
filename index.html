@@ -12,15 +12,6 @@
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body class="body">
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button type="button" class="close-button"data-modal-close>
-                <svg class="close-button-icon">
-                    <use href="./images/svg/symbol-defs.svg#icon-close-button"></use>
-                </svg>
-            </button>
-        </div>
-    </div>
     <header>
         <div class="container">       
             <div class="header-inner">              
@@ -34,7 +25,7 @@
                 </nav>       
                     <ul class="info-body">
                         <li class="info"> 
-                            <a href="mailto:info@devstudio.com">
+                            <a class="info-link" href="mailto:info@devstudio.com">
                                 <svg class="envelope-icon">
                                     <use href="./images/svg/icons.svg#icon-envelope"></use>
                                 </svg>info@devstudio.com
@@ -104,9 +95,9 @@
                 <div class="services-title">
                 <h2 class="our-projects">Чем мы занимаемся</h2>
                 <ul>
-                    <li class="services"><div class="services-text 1">Десктопные приложения</div><img src="./images/desktop1.jpg" width="370" height="295" alt="Програмирование"></li>
-                    <li class="services"><div class="services-text 2">Мобильные приложения</div><img src="./images/phone1.jpg"  width="370" height="295" alt="Дизайн"></li>
-                    <li class="services"><div class="services-text 3">Дизайнерские решения</div><img src="./images/colors1.jpg"  width="370" height="295" alt="Цветокоррекция"></li>
+                    <li class="services"><div class="services-text 1">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</div><img src="./images/desktop1.jpg" width="370" height="295" alt="Програмирование"></li>
+                    <li class="services"><div class="services-text 2">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</div><img src="./images/phone1.jpg"  width="370" height="295" alt="Дизайн"></li>
+                    <li class="services"><div class="services-text 3">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</div><img src="./images/colors1.jpg"  width="370" height="295" alt="Цветокоррекция"></li>
                 </div>
                 </ul>
         </section>
@@ -342,28 +333,28 @@
                         <p class="social-links-text">ПРИСОЕДИНЯЙТЕСЬ</p>
                     <ul>
                         <li class="social-link-icon-item">
-                            <a class="inst-link-icon" href="">
+                            <a class="social-link-icon-source" href="">
                                 <svg class="social-link-icon">
                                     <use href="./images/svg/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-link-icon-item">
-                            <a class="twitt-link-icon" href="">
+                            <a class="social-link-icon-source" href="">
                                 <svg class="social-link-icon">
                                     <use href="./images/svg/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-link-icon-item">
-                            <a class="facebook-link-icon" href="">
+                            <a class="social-link-icon-source" href="">
                                 <svg class="social-link-icon">
                                     <use href="./images/svg/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-link-icon-item">
-                            <a class="linkedin-link-icon" href="">
+                            <a class="social-link-icon-source" href="">
                                 <svg class="social-link-icon">
                                     <use href="./images/svg/icons.svg#icon-linkedin"></use>
                                 </svg>
@@ -375,6 +366,15 @@
             </div>
             </div>        
     </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+            <svg class="close-button-icon">
+                <use  class="close-button-icon" href="./images/svg/symbol-defs.svg#icon-close-button"></use>
+            </svg>
+        </button>
+    </div>
+</div>
 <script src="./js/modal.js"></script>
 </body>
 </html>
