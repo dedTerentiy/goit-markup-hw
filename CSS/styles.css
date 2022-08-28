@@ -312,8 +312,7 @@ section :nth-child(5) {
     letter-spacing: 0.06em;
     padding: 10px 32px;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .button:hover {
@@ -342,10 +341,7 @@ section:nth-child(2) {
 }
 
 .box-peculiarities {
-    /* display: flex; */
-    /* justify-content: center; */
     width: 270px;
- 
 }
 
 .peculiarities-boxes {
@@ -450,8 +446,6 @@ section:nth-child(2) {
 
     color: rgba(255, 255, 255, 1);
     background-color: rgba(47, 48, 58, 0.8);
-    
-
 }
 
 .our-team-section {
@@ -804,6 +798,9 @@ section:nth-child(2) {
     display: flex;
 }
 
+.social-link-icon-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+}
 
 .social-link-icon-item:not(:last-child) {
     margin-right: 10px;
@@ -813,8 +810,6 @@ section:nth-child(2) {
     fill: #F5F4FA;
     width: 20px;
     height: 20px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .social-link-icon:not(:last-child) {
@@ -830,7 +825,7 @@ section:nth-child(2) {
     border: 1px solid transparent;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
     
@@ -848,8 +843,6 @@ section:nth-child(2) {
     height: 44px;
     margin-top: 16px;
     margin-bottom: 30px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 ----------------/* portfolio.css */-------------------
@@ -884,7 +877,7 @@ section:nth-child(2) {
     line-height: 1.6;
     padding: 6px 22px;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover {
@@ -1016,7 +1009,7 @@ section:nth-child(2) {
 
 --------------/* modal-window */------------
 
-.backdrop {     
+.modal-container {   
     position: fixed;
     top: 0;
     left: 0;
@@ -1031,7 +1024,7 @@ section:nth-child(2) {
     width: 528px;
     min-height: 581px;
 
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -1074,4 +1067,4 @@ section:nth-child(2) {
     visibility: hidden;
     pointer-events: none;
 }
-
+
